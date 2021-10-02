@@ -29,14 +29,29 @@
                 <input type="text" name="sobrenome" id="sobrenome" required>
             </div>
         </fieldset>
-        <fieldset>
-            <div class="campo">
-                <label for="email"><strong>Email:</strong></label>
-                <input type="email" name="email" id="email" required>
-                <label for="telefone"><strong>Telefone:</strong></label>
-                <input type="tel" name="telefone" id="telefone">
-            </div>
-        </fieldset>
+        
+        <!--Campo de email-->
+        <div class="campo">
+            <label for="email"><strong>Email:</strong></label>
+            <input type="email" name="email" id="email" required>
+            <label for="telefone"><strong>Telefone:</strong></label>
+            <input type="tel" name="telefone" id="telefone">
+        </div>
+
+        <!--Campo com 3 opções de botões selecionáveis-->
+        <div class="campo">
+            <label><strong>De qual lado você desenvolve?</strong></label>
+            <label>
+                <input type="radio" name="devweb" value="frontend" checked>Front-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="backend">Back-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullstack">Fullstack
+            </label>
+        </div>
+
         <div class="campo">
             <label for="">Qual linguagem você programa?</label>
             <input type="checkbox" name="checkbox" id="JS">JS
