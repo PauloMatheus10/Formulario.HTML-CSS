@@ -92,7 +92,7 @@ fieldset.grupo .campo{
     background: #E0E0F8;
 }
 
-/* Elemento de classe "botao" */
+/* Elemento de classe "botao" e <span>*/
 .botao{
     font-size: 1.2em;
     background: #1c045c;
@@ -106,14 +106,31 @@ fieldset.grupo .campo{
     top: 96%;
     left: 48%;
     margin-right: -50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);   
+    overflow: hidden;
+}
+
+span{
+    background:#ccbbff;
+    height: 100%;
+    width: 0;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 1.2s;
+}
+
+.botao:hover span{
+    width: 100%;
 }
 
 /* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
 .botao:hover{
-    background: #ccbbff;
     box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: none;
+    color: #1c045c;
 }
 
 /* Elementos de classe botão e de tag <select> */
